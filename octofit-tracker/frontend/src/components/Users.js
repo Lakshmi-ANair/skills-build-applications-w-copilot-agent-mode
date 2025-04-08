@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/users')
+    fetch('https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));

@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/workouts')
+    fetch('https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data))
       .catch(error => console.error('Error fetching workouts:', error));

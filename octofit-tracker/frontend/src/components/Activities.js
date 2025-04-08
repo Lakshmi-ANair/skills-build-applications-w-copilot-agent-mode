@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/activities')
+    fetch('https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data))
       .catch(error => console.error('Error fetching activities:', error));
