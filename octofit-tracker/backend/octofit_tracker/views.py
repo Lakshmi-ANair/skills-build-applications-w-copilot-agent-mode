@@ -27,9 +27,9 @@ class WorkoutViewSet(ModelViewSet):
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': 'api/users/',
-        'teams': 'api/teams/',
-        'activities': 'api/activities/',
-        'leaderboard': 'api/leaderboard/',
-        'workouts': 'api/workouts/',
+        'users': 'https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/users/',
+        'teams': 'https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/teams/',
+        'activities': 'https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/activities/',
+        'leaderboard': 'https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/leaderboard/',
+        'workouts': 'https://cuddly-yodel-jj99qjqvw6jwc95g-8000.app.github.dev/api/workouts/',
     })
